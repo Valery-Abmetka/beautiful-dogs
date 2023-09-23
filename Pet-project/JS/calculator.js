@@ -16,48 +16,47 @@ let maxVegetable = document.getElementById("maxVegetable")
 btnСalculate.onclick = calculateDiet
 
 function calculateDiet() {
-  
-let firstMonthDiet = {
-  minDailyNorm: 0.05,
-  maxDailyNorm: 0.1,
-  minWeekNorm: 0.35,
-  maxWeekNorm: 0.7,
-  minProteinNorm: 0.245,
-  maxProteinNorm: 0.49,
-  minVegetableNorm: 0.105,
-  maxVegetableNorm: 0.21,
-}
-let fourthMonthDiet = {
-  minDailyNorm: 0.03,
-  maxDailyNorm: 0.05,
-  minWeekNorm: 0.21,
-  maxWeekNorm: 0.35,
-  minProteinNorm: 0.147,
-  maxProteinNorm: 0.24,
-  minVegetableNorm: 0.063,
-  maxVegetableNorm: 0.105,
-}
-let firsYearsDiet = {
-  minDailyNorm: 0.03,
-  maxDailyNorm: 0.03,
-  minWeekNorm: 0.21,
-  maxWeekNorm: 0.21,
-  minProteinNorm: 0.15,
-  maxProteinNorm: 0.15,
-  minVegetableNorm: 0.06,
-  maxVegetableNorm: 0.06,
-}
+  let firstMonthDiet = {
+    minDailyNorm: 0.05,
+    maxDailyNorm: 0.1,
+    minWeekNorm: 0.35,
+    maxWeekNorm: 0.7,
+    minProteinNorm: 0.245,
+    maxProteinNorm: 0.49,
+    minVegetableNorm: 0.105,
+    maxVegetableNorm: 0.21,
+  }
+  let fourthMonthDiet = {
+    minDailyNorm: 0.03,
+    maxDailyNorm: 0.05,
+    minWeekNorm: 0.21,
+    maxWeekNorm: 0.35,
+    minProteinNorm: 0.147,
+    maxProteinNorm: 0.24,
+    minVegetableNorm: 0.063,
+    maxVegetableNorm: 0.105,
+  }
+  let firsYearsDiet = {
+    minDailyNorm: 0.03,
+    maxDailyNorm: 0.03,
+    minWeekNorm: 0.21,
+    maxWeekNorm: 0.21,
+    minProteinNorm: 0.15,
+    maxProteinNorm: 0.15,
+    minVegetableNorm: 0.06,
+    maxVegetableNorm: 0.06,
+  }
 
-let sevenYearsDiet = {
-  minDailyNorm: 0.025,
-  maxDailyNorm: 0.03,
-  minWeekNorm: 0.175,
-  maxWeekNorm: 0.21,
-  minProteinNorm: 0.1225,
-  maxProteinNorm: 0.147,
-  minVegetableNorm: 0.0525,
-  maxVegetableNorm: 0.063,
-}
+  let sevenYearsDiet = {
+    minDailyNorm: 0.025,
+    maxDailyNorm: 0.03,
+    minWeekNorm: 0.175,
+    maxWeekNorm: 0.21,
+    minProteinNorm: 0.1225,
+    maxProteinNorm: 0.147,
+    minVegetableNorm: 0.0525,
+    maxVegetableNorm: 0.063,
+  }
 
   let selectDiet = firstMonthDiet
   if (selectYers.value === "1") {
