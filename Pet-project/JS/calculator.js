@@ -15,6 +15,8 @@ let maxVegetable = document.getElementById("maxVegetable")
 
 btnСalculate.onclick = calculateDiet
 
+function calculateDiet() {
+  
 let firstMonthDiet = {
   minDailyNorm: 0.05,
   maxDailyNorm: 0.1,
@@ -57,7 +59,6 @@ let sevenYearsDiet = {
   maxVegetableNorm: 0.063,
 }
 
-function calculateDiet() {
   let selectDiet = firstMonthDiet
   if (selectYers.value === "1") {
     selectDiet = fourthMonthDiet
@@ -96,6 +97,7 @@ function calculateDiet() {
 
   for (let value in selectDiet) {
     selectDiet[value] *= selectWeight.value
+    selectDiet[value] = selectDiet[value].toFixed(2)
   }
 
   minTotal.innerHTML = selectDiet.minDailyNorm
