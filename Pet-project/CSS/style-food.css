@@ -472,7 +472,7 @@ a {
   border-radius: 14px;
 }
 
-.copy__nav-list .copy__nav-list {
+.copy__nav-list {
   display: flex;
   justify-content: center;
   gap: 40px;

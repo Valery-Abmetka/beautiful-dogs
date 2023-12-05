@@ -514,7 +514,7 @@ a {
 }
 
 .copy {
-  .copy__nav-list &__nav-list {
+  &__nav-list {
     display: flex;
     justify-content: center;
     gap: 40px;
